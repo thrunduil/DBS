@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\src\dbs\include\dbs\config.h">
+      <Filter>Source Files\include\dbs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dbs\include\dbs\dbs.h">
+      <Filter>Source Files\include\dbs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dbs\include\dbs\details\dbs_details.h">
+      <Filter>Source Files\include\dbs\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dbs\include\dbs\details\dbs_impl.h">
+      <Filter>Source Files\include\dbs\details</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0064c808-7e8c-41a2-8a4a-87dcde2a2467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{3100fd9d-7772-4e0f-955a-819a337ebdd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include">
+      <UniqueIdentifier>{51cd097f-32c3-4dd4-bc17-0ce4e74aad05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\dbs">
+      <UniqueIdentifier>{27646d48-e36a-4d96-8e26-e63e6d3fe791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include\dbs\details">
+      <UniqueIdentifier>{2879cf68-2818-4075-b13a-9df30f390d0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\dbs\dbs.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\dbs\include\dbs\details\dbs_details.inl">
+      <Filter>Source Files\include\dbs\details</Filter>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\README.md">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\INSTALL.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

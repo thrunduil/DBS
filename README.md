@@ -1,6 +1,6 @@
 ﻿# DBS
 
-DBS library implements a dynamic bitset, that can store unlimited number
+C++ library implementing a dynamic bitset, that can store unlimited number
 of bits (restricted to number of values represented by size_t type). 
 
 This library offers similar functionality to std :: bitset 

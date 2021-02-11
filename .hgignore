@@ -29,3 +29,7 @@ msvs
 *.db
 *.opendb
 *.vspx
+*.db-shm
+*/Solution.VC.db-wal
+*.iobj
+*.ipdb

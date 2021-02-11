@@ -1,22 +1,22 @@
-/* 
- *  This file is a part of DBS library.
- *
- *  Copyright (c) Pawe³ Kowal 2017
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- */
+/*
+*  This file is a part of DBS library.
+*
+*  Copyright (c) Pawe³ Kowal 2017 - 2021
+*
+*  This program is free software; you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License as published by
+*  the Free Software Foundation; either version 2 of the License, or
+*  (at your option) any later version.
+*
+*  This program is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU General Public License for more details.
+*
+*  You should have received a copy of the GNU General Public License
+*  along with this program; if not, write to the Free Software
+*  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+*/
 
 #include "dbs/dbs.h"
 #include "dbs/details/dbs_impl.h"
@@ -1044,14 +1044,6 @@ size_t dbs::last() const
 {
     return details::dbs_impl::last();
 };
-
-/*
-//TODO
-size_t dbs::hash_value2() const
-{
-    return details::dbs_impl::hash_value();
-};
-*/
 
 bool dbs::test_any(const dbs& other) const
 {

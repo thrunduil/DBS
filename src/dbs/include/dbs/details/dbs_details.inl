@@ -1,26 +1,30 @@
-/* 
- *  This file is a part of DBS library.
- *
- *  Copyright (c) Pawe³ Kowal 2017
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- */
+/*
+*  This file is a part of DBS library.
+*
+*  Copyright (c) Pawe³ Kowal 2017 - 2021
+*
+*  This program is free software; you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License as published by
+*  the Free Software Foundation; either version 2 of the License, or
+*  (at your option) any later version.
+*
+*  This program is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU General Public License for more details.
+*
+*  You should have received a copy of the GNU General Public License
+*  along with this program; if not, write to the Free Software
+*  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+*/
 
 #pragma once
 
 #include "dbs_details.h"
+
+#ifdef DBS_HAS_POPCNT
+    #include "nmmintrin.h"
+#endif
 
 namespace dbs_lib { namespace details
 {
@@ -102,6 +106,7 @@ template<class block_type>
 DBS_FORCE_INLINE
 size_t header<block_type, 4>::least_significant_bit(size_t bits)
 {
+    // TODO: take from matcl::simd
     //taken from The Aggregate Magic Algorithms
     return bits & -bits;
 };
@@ -190,6 +195,7 @@ template<class block_type>
 DBS_FORCE_INLINE
 size_t header<block_type, 8>::least_significant_bit(size_t bits)
 {
+    // TODO: take from matcl::simd
 	//taken from The Aggregate Magic Algorithms
 	return bits & -bits;
 };
